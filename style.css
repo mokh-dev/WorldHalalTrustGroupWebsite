@@ -125,6 +125,7 @@
 body {
     background-color: var(--clr-background-1);
     margin: 0rem;
+    overflow-x: hidden;
 }
 
 section {
