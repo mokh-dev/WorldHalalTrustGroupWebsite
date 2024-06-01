@@ -1,0 +1,124 @@
+body > section {
+    gap: var(--spacing-subsection-margin2);
+}
+
+
+/* #region Certification Process */
+
+#certificationProcess subsection:last-child {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 80rem;
+
+    gap: var(--spacing-card-margin);
+}
+
+#certificationProcess subsection:last-child > div {
+    padding: var(--spacing-card-padding-vertical) var(--spacing-card-padding-horizontal);
+
+    background-color: var(--clr-background-3);
+    border-radius: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: var(--spacing-section-gutter);
+    transform-origin: left;
+}
+
+#certificationProcess subsection:last-child > div > a {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1023px) {
+    
+    #certificationProcess subsection:last-child > div > a {
+        flex-shrink: 1;
+        width: min-content;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region Application Process */
+
+#applicationProcess subsection:last-child > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-h2-h2-margin);
+}
+
+#applicationProcess subsection:last-child > div > a > h2{
+    transform-origin: left;
+
+    transition: text-shadow 0.25s;
+}
+
+#applicationProcess subsection:last-child > div > a > h2:hover{
+    text-shadow: 0rem 0rem 0.125rem var(--clr-base-2);
+}
+
+
+/* #endregion */
+
+
+/* #region Our Policies */
+
+#ourPolicies subsection:last-child {
+    display: flex;
+    justify-content: space-between;
+
+    gap: var(--spacing-section-gutter);
+
+    background-color: var(--clr-background-3);
+
+    padding: var(--spacing-card-padding-vertical) var(--spacing-card-padding-horizontal);
+    border-radius: 1.5rem;
+    max-width: 100rem;
+}
+
+
+#ourPolicies subsection:last-child > div:first-child > h2 > button {
+    padding: 0rem;
+
+    background-color: transparent;
+    border-radius: 0rem;
+
+    font: var(--font-subheading);
+    color: var(--clr-base-1);
+    text-align: left;
+
+    transition: text-shadow 0.25s;
+}
+
+#ourPolicies subsection:last-child > div:first-child > h2 > button:hover {
+    text-shadow: 0rem 0rem 0.5rem var(--clr-base-2);
+}
+
+#ourPolicies subsection:last-child > div:first-child > h2 > button:focus {
+    text-shadow: 0rem 0rem 0.125rem var(--clr-base-2);
+}
+
+
+.policydisplaymenu > div {
+    display: none;
+}
+
+div.DisplayedButtons{
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-h2-h2-margin);
+}
+
+div.DisplayedButtons > a > button {
+    width: 100%;
+}
+
+
+/* #endregion */

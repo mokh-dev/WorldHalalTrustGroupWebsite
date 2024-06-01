@@ -1,0 +1,183 @@
+body > section {
+    gap: var(--spacing-subsection-margin);
+}
+
+/* #region Story And Goal */
+
+#storyAndGoal > subsection {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--spacing-section-gutter);
+}
+
+#storyAndGoal > subsection > span {
+    flex-basis: 50rem;
+}
+
+#storyAndGoal > subsection > img {
+    width: var(--sizing-big-img-width);
+    height: var(--sizing-big-img-height);
+}
+
+/* #endregion */
+
+
+/* #region Company Display */
+
+#companyDisplay > subsection{
+    display: flex;
+}
+
+
+/* #region Certified and Recognized */
+
+#companyDisplay subsection:nth-child(-n + 2) {
+    flex-direction: column;
+
+    gap: calc(var(--spacing-p-h1-margin) * 3); 
+
+    text-align: center;
+}
+
+
+
+
+.sliders1, .sliders2 {
+    overflow: hidden;
+    white-space: nowrap;
+    transform: scaleX(1.1);
+}
+
+.sliders1:before, .sliders2:before,
+.sliders1:after, .sliders2:after {
+    position: absolute;
+    top: 0;
+    width: 8vw;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.sliders1:before, .sliders2:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
+}
+
+.sliders1:after, .sliders2:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
+}
+
+.sliderTrack1 {
+    display: inline-block;
+    animation: 55s slide infinite linear;
+}
+
+.sliderTrack2 {
+    display: inline-block;
+    animation: 55s slide infinite linear reverse;
+}
+
+
+.sliderTrack1 > img, .sliderTrack2 > img {
+    width: var(--sizing-img-width);
+    height: var(--sizing-img-height);
+
+    margin: 0 var(--spacing-carousel-margin);
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* #endregion */
+
+
+/* #region Terminated And Charities */
+
+#companyDisplay subsection:nth-child(n + 3) {
+    gap: var(--spacing-section-gutter);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#companyDisplay subsection:nth-child(n + 3) span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 50rem;
+}
+
+#companyDisplay subsection:nth-child(n + 3) div {
+    margin: auto;
+}
+
+
+
+
+.terminatedCertificateDisplaySlider > div {
+    display: none;
+}
+
+div.companyDisplayImgContainer {
+    display: flex;
+
+    flex-wrap:wrap;
+
+    gap: var(--spacing-carousel-margin);
+
+    justify-content: center;
+
+    min-width: calc(var(--sizing-img-width) + var(--sizing-img-width) + var(--spacing-carousel-margin));
+    max-width: calc(var(--sizing-img-width) + var(--sizing-img-width) + var(--spacing-carousel-margin));
+}
+.companyDisplayImgContainer > img {
+    width: var(--sizing-img-width);
+    height: var(--sizing-img-height);
+}
+
+.charityImgContainer > img {
+    width: var(--sizing-img-width);
+    height: var(--sizing-img-height);
+}
+
+#companyDisplay subsection:nth-child(3) > div {
+    display: flex;
+    align-items: center;
+}
+
+#companyDisplay subsection:nth-child(3) > div > button {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+
+.arrow {
+    color: var(--clr-background-4);
+    width: calc(var(--sizing-img-height) / 1.5);
+    height: calc(var(--sizing-img-height) / 1.5);
+    transition: color 0.25s;
+
+}
+.arrow:hover {
+    color: var(--clr-base-2);
+}
+
+.arrow:active {
+    color: var(--clr-base-1);
+}
+
+/* #endregion */
+
+
+/* #endregion */

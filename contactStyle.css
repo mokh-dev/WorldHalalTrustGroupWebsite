@@ -1,0 +1,79 @@
+body > section {
+    gap: var(--spacing-subsection-margin2);
+}
+
+
+/* #region Our Offices */
+#ourOffices {
+    align-items: center;
+}
+
+#ourOffices subsection:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: calc(var(--spacing-section-gutter) * 0.75) calc(var(--spacing-section-gutter));
+}
+
+#ourOffices subsection:last-child > div {
+    background-color: var(--clr-background-3);
+
+    padding: var(--spacing-card-padding-vertical) var(--spacing-card-padding-horizontal);
+
+    border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: calc(var(--spacing-p-h2-margin) * 4);
+}
+
+#ourOffices subsection:last-child > div > span {
+    display: flex;
+    flex-direction: column;
+
+    gap: calc(var(--spacing-p-p-margin) * 2);
+}
+
+#ourOffices subsection:last-child > div > h2 {
+    color: var(--clr-accent-2);
+}
+
+
+
+/* #endregion */
+
+
+/* #region Office Map */
+#officeMap {
+    padding: 0rem;
+
+    display: block;
+    gap: 0rem;
+}
+
+#officeMap > subsection > div {
+    width: 100%;
+    height: var(--sizing-office-map-height);
+
+    overflow: hidden;
+}
+
+#officeMap > subsection > div > iframe {
+    width: 100%;
+    height:  calc(var(--sizing-office-map-height) + 10rem);
+
+    border: 0rem;
+    margin-top: -4.125rem;
+
+    overflow: hidden;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* #endregion */

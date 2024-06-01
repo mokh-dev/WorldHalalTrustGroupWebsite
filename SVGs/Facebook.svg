@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933333"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(27.642166,-27.148645)"><g
+       style="fill:none"
+       id="g2"
+       transform="matrix(0.26458333,0,0,0.26458333,-27.505457,27.057628)"><g
+         opacity="0.5"
+         id="g1"><circle
+           cx="31.483299"
+           cy="32.344002"
+           r="32"
+           fill="#f7f7f7"
+           id="circle1" /><path
+           d="m 35.9833,14.094 c -2.4532,0 -4.806,0.9745 -6.5407,2.7093 -1.7347,1.7347 -2.7093,4.0874 -2.7093,6.5407 v 5.15 h -4.95 c -0.248,0 -0.45,0.2 -0.45,0.45 v 6.8 c 0,0.248 0.2,0.45 0.45,0.45 h 4.95 v 13.95 c 0,0.248 0.2,0.45 0.45,0.45 h 6.8 c 0.248,0 0.45,-0.2 0.45,-0.45 v -13.95 h 4.994 c 0.206,0 0.386,-0.14 0.436,-0.34 l 1.7,-6.8 c 0.0168,-0.0664 0.0181,-0.1357 0.0041,-0.2026 -0.0141,-0.067 -0.0433,-0.1299 -0.0853,-0.1839 C 41.44,28.6136 41.3862,28.5699 41.3248,28.5398 41.2633,28.5097 41.1958,28.494 41.1273,28.494 h -6.694 v -5.15 c 0,-0.2036 0.0401,-0.4051 0.118,-0.5932 0.0779,-0.188 0.1921,-0.3589 0.336,-0.5028 0.144,-0.144 0.3148,-0.2581 0.5029,-0.336 0.188,-0.0779 0.3896,-0.118 0.5931,-0.118 h 5.2 c 0.248,0 0.45,-0.2 0.45,-0.45 v -6.8 c 0,-0.248 -0.2,-0.45 -0.45,-0.45 z"
+           fill="#000000"
+           id="path1-6" /></g></g></g></svg>
