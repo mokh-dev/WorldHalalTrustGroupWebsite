@@ -65,6 +65,7 @@
     --sizing-img-border-radius: 1.5rem;
     --sizing-header-height: 4.5rem;
     --sizing-header-logo: 6.5rem;
+    --sizing-header-flag: 2rem;
     --sizing-footer-logo: 5rem;
     --sizing-footer-links: 4rem;
     --sizing-office-map-height: 26rem;
@@ -75,7 +76,7 @@
 
 @media (max-width: 1023px) {
     :root{
-    --sizing-hero-height: 70vh;
+    --sizing-hero-height: 75vh;
     --sizing-header-logo: 3.5rem;
     --sizing-header-height: 2.75rem;
     --sizing-img-width: 6.5rem;
@@ -86,6 +87,7 @@
     --sizing-footer-logo: 2.5rem;
     --sizing-footer-links: 1.5rem;
     --sizing-office-map-height: 12rem;
+    --sizing-header-flag: 1rem;
 
     --spacing-p-h1-margin: 0.5rem; 
     --spacing-p-h1-margin: 1rem; 
@@ -101,7 +103,7 @@
 
     --font-heading: bold 1.5rem "Bona Nova";
     --font-subheading: normal 1rem "Bona Nova";
-    --font-body: normal 0.625rem "EB Garamond";
+    --font-body: normal 0.75rem "EB Garamond";
     --font-button: bold 1rem "EB Garamond";
 
     }
@@ -257,6 +259,7 @@ header > img {
     width: var(--sizing-header-logo);
 
     margin-left: var(--spacing-section-gutter);
+    z-index: 1;
 }
 
 header > ul {
@@ -280,6 +283,16 @@ header > ul {
     -ms-user-select: none;
     user-select: none;
 }
+
+
+header > ul > a > li > img {
+    height: var(--sizing-header-flag);
+    width: calc(var(--sizing-header-flag) * 1.525);
+
+    border-radius: 25%;
+    margin-top: 0.25rem;
+}
+
 header > ul > a > li > h2 {
     transition: text-shadow 0.25s ease;
 }
