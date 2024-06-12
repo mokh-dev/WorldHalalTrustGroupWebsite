@@ -5,7 +5,7 @@
     /* #region Colors */
 
     --clr-background-1: #FFFFFF;
-    --clr-background-2: #F7F7F7;
+    --clr-background-2: #fafafa;
     --clr-background-3: #E6E6E6;
     --clr-background-4: #BFBFBF;
 
@@ -142,14 +142,16 @@ section {
 
 
 .evenSection {
-    background-color: var(--clr-background-2);
+    background-color: var(--clr-background-1);
 
     padding-top: var(--spacing-section-padding);
     padding-bottom: var(--spacing-section-padding);
 }
 
 .oddSection {
-    background-color: var(--clr-background-1);
+    background-color: var(--clr-background-2);
+    background-image: url("SVGs/IslamicPattern.svg");
+    background-repeat: repeat;
 
     padding-top: var(--spacing-section-padding);
     padding-bottom: var(--spacing-section-padding);
@@ -318,7 +320,9 @@ header > ul > a > li > h2:hover {
 .heroSection {
     justify-content:space-around;
 
-    background-color: var(--clr-background-1);
+    background-color: var(--clr-background-2);
+    background-image: url("SVGs/IslamicPattern.svg");
+    background-repeat: repeat;
 
     height: var(--sizing-hero-height);
 }
