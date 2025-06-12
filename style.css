@@ -112,7 +112,7 @@
 /* #endregion */
 
 
-/* #region Defualt Values */
+/* #region Default Values */
 
 * {
     margin: 0rem;
@@ -379,24 +379,40 @@ header > ul > a > li > h2:hover {
 
 footer {
     display: flex;
-
     justify-content: space-between;
-
 
     padding-top: var(--spacing-footer-padding);
     padding-bottom: var(--spacing-footer-padding);
 
     background-color: var(--clr-background-4);
 
-    padding-left: var(--spacing-section-gutter);
-    padding-right: var(--spacing-section-gutter);
+    padding-left: calc(var(--spacing-section-gutter) * 2);
+    padding-right: calc(var(--spacing-section-gutter) * 2);
 }
 
-footer > img {
+@media (max-width: 520px) {
+    footer {
+        padding-left: calc(var(--spacing-section-gutter));
+        padding-right: calc(var(--spacing-section-gutter));
+    }
+}
+
+
+
+footer > div {
+    display: flex;
+    gap: 2rem;
+}
+
+
+footer > div > img {
+    justify-self: self-start;
     width: var(--sizing-footer-logo);
 }
 
-footer > p {
+footer > div > p {
+    justify-self: self-center;
+    align-self: center;
     display: flex;
 
     align-items: center;
@@ -404,6 +420,7 @@ footer > p {
 }
 
 footer > div {
+    justify-self: self-end;
     display: flex;
 
     gap: var(--spacing-footer-links-margin);
@@ -411,15 +428,26 @@ footer > div {
     align-items: center;
 }
 
-footer > div > a > img {
-    width: var(--sizing-footer-links);
+footer > div > a {
+
+    background-color: #f7f7f7;
 
     border-radius: 50%;
+    
+
     transition: box-shadow 0.25s;
 }
 
-footer > div > a > img:hover {
+footer > div > a > img {
+    width: var(--sizing-footer-links);
+}
+
+footer > div > a:hover {
     box-shadow: 0rem 0rem 0.25rem var(--clr-base-1);
+}
+
+.footerSocialButton {
+    filter:grayscale(1);
 }
 
 
