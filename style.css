@@ -433,6 +433,9 @@ footer > div > a {
     background-color: #f7f7f7;
 
     border-radius: 50%;
+
+    width: var(--sizing-footer-links);
+    height: var(--sizing-footer-links);
     
 
     transition: box-shadow 0.25s;
