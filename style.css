@@ -40,7 +40,7 @@
     --spacing-section-gutter: 4.5vw;
     --spacing-section-padding: 6rem;
     --spacing-footer-padding: 0.75rem;
-    --spacing-footer-links-margin: 0.75rem;
+    --spacing-footer-links-margin: 0.85rem;
     --spacing-subsection-margin: 12rem;
     --spacing-subsection-margin2: 6rem; 
     --spacing-p-h1-margin: 1.5rem;  
@@ -67,7 +67,7 @@
     --sizing-header-logo: 6.5rem;
     --sizing-header-flag: 2rem;
     --sizing-footer-logo: 5rem;
-    --sizing-footer-links: 4rem;
+    --sizing-footer-links: 3rem;
     --sizing-office-map-height: 26rem;
 
     /* #endregion */
@@ -430,27 +430,20 @@ footer > div {
 
 footer > div > a {
 
-    background-color: #f7f7f7;
-
-    border-radius: 50%;
-
     width: var(--sizing-footer-links);
     height: var(--sizing-footer-links);
-    
-
-    transition: box-shadow 0.25s;
 }
 
 footer > div > a > img {
     width: var(--sizing-footer-links);
+    border-radius: 0px;
 }
 
 footer > div > a:hover {
-    box-shadow: 0rem 0rem 0.25rem var(--clr-base-1);
 }
 
 .footerSocialButton {
-    filter:grayscale(1);
+
 }
 
 
